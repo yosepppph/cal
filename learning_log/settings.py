@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '@qxy8*ysry8s#%fir4k8@6(u10*n-thslox4pi1_h67j!q!qa3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -68,7 +68,7 @@ if os.getcwd() == '/app':
        }
        # Honor the 'X-Forwarded-Proto' header for request.is_secure().
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https') # Allow all host headers.
-    ALLOWED_HOSTS = ['*']
+    ALLOWED_HOSTS = ['learning_log.Herokuapp.com']
 
        # Static asset configuration
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
