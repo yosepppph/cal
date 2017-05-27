@@ -50,6 +50,9 @@ INSTALLED_APPS = [
 
 LOGIN_URL = '/users/login'
 
+STATIC_ROOT = 'staticfiles'
+STATIC_URL = '/static/'
+
 
 
 #settings for django-bootstrap3
@@ -61,7 +64,7 @@ BOOTSTRAP3 = {
 if os.getcwd() == '/app':
     import dj_database_url
     DATABASES = {
-        default': dj_database_url.config(default='postgres://localhost')
+        'default': dj_database_url.config(default='postgres://localhost')
        }
        # Honor the 'X-Forwarded-Proto' header for request.is_secure().
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https') # Allow all host headers.
