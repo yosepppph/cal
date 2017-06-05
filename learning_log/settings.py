@@ -50,8 +50,7 @@ INSTALLED_APPS = [
 
 LOGIN_URL = '/users/login'
 
-STATIC_ROOT = 'staticfiles'
-STATIC_URL = '/static/'
+
 
 
 
